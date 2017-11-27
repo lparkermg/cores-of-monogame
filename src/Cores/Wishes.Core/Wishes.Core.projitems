@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4dcd5de9-c981-46ba-9fcd-8478bfa47e81</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Wishes.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\MenuPack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\MenuRenderData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\RenderData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\MenuRenderEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\RenderEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\GameplayManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\GameManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\InputManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\MenuManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\RenderManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+</Project>
